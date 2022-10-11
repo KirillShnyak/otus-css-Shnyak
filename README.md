@@ -1,1 +1,1 @@
-# otus-css-Shnyak
+# otus-css-shnyak
