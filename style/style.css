@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Butler;
+    src: url("../fonts/butler/Butler_Ultra_Light.otf");
+    font-weight: 250;
+}
+@font-face {
+    font-family: Butler;
+    src: url("../fonts/butler/Butler_Light.otf");
+    font-weight: 300;
+}
+
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.title {
+    font-family: 'Butler', serif;
+    font-size: 87px;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.jobtitle{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blockquote {
+    font-family: 'Butler', serif;
+    font-size: 32px;
+    font-weight: 250;
+}
+
+.nameDesign {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.whitepapers {
+    color: #000000;
+}
+
+.ulTitle {
+    font-family: 'Batler', serif;
+    font-size: 92px;
+    font-weight: 300;
+}
+
+li {
+    font-family: 'Butler', serif;
+    font-size: 34px;
+    width: 300;
+}
