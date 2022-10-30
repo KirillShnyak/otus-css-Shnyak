@@ -1,24 +1,25 @@
 @font-face {
     font-family: Butler;
     src: local(Butler);
-    src: url("../fonts/butler/Butler_Ultra_Light.woff");
-    src: url("../fonts/butler/Butler_Ultra_Light.woff2");
-    src: url("../fonts/butler/Butler_Ultra_Light.otf");
-    font-weight: 250;
-}
-@font-face {
-    font-family: Butler;
-    src: local(Butler);
     src: url("../fonts/butler/Butler_Light.woff");
     src: url("../fonts/butler/Butler_LIght.woff2");
     src: url("../fonts/butler/Butler_Light.otf");
     font-weight: 300;
 }
+
 @font-face {
     font-family: Butler;
     src: local(Butler);
     src: url("../fonts/butler/Butler_Regular.woff");
     src: url("../fonts/butler/Butler_Regular.woff2");
     src: url("../fonts/butler/Butler_Regular.otf");
+    font-weight: 400;
+
+@font-face {
+    font-family: Butler;
+    src: local(Butler);
+    src: url("../fonts/butler/Butler_Medium.woff");
+    src: url("../fonts/butler/Butler_Medium.woff2");
+    src: url("../fonts/butler/Butler_Medium.otf");
     font-weight: 500;
 }
