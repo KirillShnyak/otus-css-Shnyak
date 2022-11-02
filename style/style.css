@@ -1,0 +1,60 @@
+:root {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navigation {
+    font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.title {
+    font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.4rem;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.jobtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.blockquote {
+    font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.nameDesign {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.whitepapers {
+    color: #000000;
+}
+
+.ulTitle {
+    font-family: 'Batler', Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.8rem;
+    font-weight: 300;
+}
+
+li {
+    font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.1rem;
+    width: 300;
+}
