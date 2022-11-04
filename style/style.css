@@ -1,13 +1,21 @@
 :root {
     font-size: 16px;
     line-height: 1.2;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    max-width: 1440px;
+    min-width: 428px;
+    /* margin: 0; */
 }
 
 .navigation {
@@ -20,6 +28,10 @@ body {
     font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
     font-size: 5.4rem;
     font-weight: 300;
+    margin-top: 130px;
+    margin-left: 70px;
+    margin-bottom: 18px;
+    margin-right: 70px;
 }
 
 .subtitle {
@@ -58,3 +70,21 @@ li {
     font-size: 2.1rem;
     width: 300;
 }
+
+.hero_img {
+    position: relative;
+    top: 135px;
+    left: 187px;
+    right: 187px;
+}
+
+.hero_text{
+    position: absolute;
+    top: 272px;
+    left: 442px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 557px;
+    height: 355px;
+}
+
