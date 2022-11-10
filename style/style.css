@@ -1,8 +1,6 @@
 :root {
     font-size: 16px;
     line-height: 1.2;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .hide {
@@ -13,12 +11,10 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    max-width: 1440px;
-    min-width: 428px;
-    /* margin: 0; */
+    background-color: #ffffff;
 }
 
-.navigation {
+.menu {
     font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 500;
@@ -28,10 +24,6 @@ body {
     font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
     font-size: 5.4rem;
     font-weight: 300;
-    margin-top: 130px;
-    margin-left: 70px;
-    margin-bottom: 18px;
-    margin-right: 70px;
 }
 
 .subtitle {
@@ -71,20 +63,37 @@ li {
     width: 300;
 }
 
-.hero_img {
-    position: relative;
-    top: 135px;
-    left: 187px;
-    right: 187px;
+.hero_block {
+    position: relative; 
+
+}
+
+.hero_block img {
+   position: absolute;
+   min-width: 428;
+   padding: 135px 187px;
+   margin-top: 405px;
+   left: 50%; top: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .hero_text{
     position: absolute;
-    top: 272px;
-    left: 442px;
     background-color: #ffffff;
     text-align: center;
-    width: 557px;
-    height: 355px;
+    /* vertical-align: middle; не работает потому что position: absolute не дает?*/
+    margin-top: 405px; /* без этого все улетает вверх, так и не разобрался почему  */
+    width: 35rem;
+    height: 22rem;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.hero_text .title  {
+    padding-top: 130px;
+    
+}
+
+.hero_text .subtitle  {
+    padding-top: 18px;
+}
