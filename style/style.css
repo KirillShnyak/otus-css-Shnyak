@@ -110,3 +110,49 @@ li {
   font-size: 0.21em;
   margin-bottom: -1.2em;
 }
+
+.b {
+    position: absolute;
+    top: 46.7rem;
+    right: 3.6rem;
+    transform: rotateZ(-90deg);
+}
+
+#biography img {
+    width: 38.5%;
+    margin-left: 9.3%;
+    margin-right: 2.2%;
+    max-height: 52.5rem;
+    min-height: 52.5rem;
+    object-fit: contain;
+}
+
+.biography_text {
+    float: right;
+    width: 30.3%;
+    margin-left: 8%;
+    margin-right: 11.7%;
+    max-height: 56.2rem;
+}
+
+#biography h3 {
+    padding-top: 12.25rem;
+}
+
+.jobtitle{
+    margin-top: 4.1rem;
+}
+
+.jobtitle::after {
+    content: "";
+    background: #000000;
+    width: 0.875rem;
+    height: 0.25rem;
+    display: block;
+    margin-top: 4.3rem;
+    margin-bottom: 1.9rem;
+}
+
+.slash::after {
+    content: "/";
+}
