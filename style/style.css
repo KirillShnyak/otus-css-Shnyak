@@ -156,3 +156,9 @@ li {
 .slash::after {
     content: "/";
 }
+
+#biography::after {
+    content: "";
+    display: block;
+    clear: both;
+}
