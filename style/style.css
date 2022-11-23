@@ -12,7 +12,6 @@ body {
     font-size: 1rem;
     font-weight: 400;
     background-color: #ffffff;
-    line-height: 1.2;
 }
 
 main {
@@ -111,50 +110,67 @@ li {
   margin-bottom: -1.2em;
 }
 
-.b {
+.biography {
     position: absolute;
-    top: 46.7rem;
-    right: 3.6rem;
+    top: 90%;
+    right: 0.1%;
     transform: rotateZ(-90deg);
+    z-index: 2;
 }
 
-#biography img {
-    width: 38.5%;
-    margin-left: 9.3%;
-    margin-right: 2.2%;
-    max-height: 52.5rem;
-    min-height: 52.5rem;
+.biography_img {
+    background: purple;
+    float: left;
+    width: 50%;
+    text-align: right;
+    height: 100%;
+    position: relative;
     object-fit: contain;
 }
 
-.biography_text {
-    float: right;
-    width: 30.3%;
-    margin-left: 8%;
-    margin-right: 11.7%;
-    max-height: 56.2rem;
+#biography img {
+    max-width: 100%;
+    position: absolute; 
+    right: 4.6%;
+    top: 47%;
+    transform: translateY(-50%);
 }
 
-#biography h3 {
-    padding-top: 12.25rem;
+.biography_text {
+    /* background: yellow; */
+    float: right;
+    width: 50%;
+    height: 100%;
+    position: relative;
 }
+
+.biography_col_text{
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+}
+
+/* #biography h3 {
+    display: table-caption;
+} */
 
 .jobtitle{
-    margin-top: 4.1rem;
+    padding-top: 2.3em;
+    /* white-space: nowrap; */
 }
 
-.jobtitle::after {
-    content: "";
+.biography_text hr {
     background: #000000;
     width: 0.875rem;
     height: 0.25rem;
     display: block;
-    margin-top: 4.3rem;
-    margin-bottom: 1.9rem;
-}
-
-.slash::after {
-    content: "/";
+    margin-top: 4em;
+    margin-bottom: 1.8em;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
 }
 
 #biography::after {
