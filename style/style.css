@@ -112,7 +112,7 @@ li {
 
 .biography {
     position: absolute;
-    top: 41%;
+    top: 38%;
     right: 2.5%;
     transform: rotateZ(-90deg) translateX(-550%);
     z-index: 2;
@@ -131,8 +131,6 @@ li {
     max-height: 100%;
     position: absolute; 
     right: 4.6%;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .biography_text {
@@ -144,9 +142,10 @@ li {
 
 .biography_col_text {
     position: absolute;
-    left: 44%;
-    top: 55%;
+    left: 46%;
+    top: 51%;
     transform: translate(-50%, -50%);
+    width: 60%;
 }
 
 .jobtitle {
@@ -160,6 +159,10 @@ li {
     display: block;
     margin: 4em 0 1.8em;
     border: none;
+}
+
+#biography .title {
+    width: 93%;
 }
 
 #biography::after {
