@@ -170,3 +170,62 @@ li {
     display: block;
     clear: both;
 }
+
+#testimonials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#testimonials .subtitle {
+    width: 100%;
+    padding-left: 12.3%;
+    padding-top: 2.8%;
+}
+
+#testimonials a {
+    text-decoration: none;
+}
+
+.links_block {
+    width: 12.5%;
+    transform: rotateZ(-90deg) translate(-333%, 78%);
+    display: flex;
+    max-height: 2rem;
+    text-align: left;
+}
+
+.whitepapers_margin {
+    margin: 0 36%;
+}
+
+.bold_text {
+    font-weight: bolder;
+}
+
+.testimonials_img_block {
+    width: 37.5%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+.testimonials_img {
+    max-width: 100%;
+    max-height: 100%;   
+}
+
+.blockquote_block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 16% 0 18.5%;
+    gap: 2em;
+}
+
+.blockquote_block .blockquote {
+    text-align: center;
+}
+
+.blockquote_img {
+    max-width: 100%;
+    max-height: 100%;
+}
