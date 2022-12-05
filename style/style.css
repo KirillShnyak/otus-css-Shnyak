@@ -176,26 +176,25 @@ li {
 
 .designers_subtitle {
     position: absolute;
-    transform: translate(33%, 658%) rotate(-90deg);
+    transform: translate(33%, 710%) rotate(-90deg);
     right: 28%;
 }
 
 .designers_block {
     display: flex;
-    align-items:flex-end;
-    padding: 7em 0;
+    align-items: baseline;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    position: absolute;
 }
 
-.card_Jess_Wonder {
+.designers_block_card {
+    width: 23%; 
+}
+
+.card_bigsize {
     width: 50%;
-}
-
-.card_Kameron_Clein {
-    width: 23%;  
-}
-
-.card_Louisse_Red {
-    width: 23%;
 }
 
 .card_img {
@@ -208,7 +207,7 @@ li {
     text-transform: uppercase;
 }
 
-.text_Jess_Wonder {
+.text_card_bigsize {
     margin-left: 11em;
 }
 
@@ -233,6 +232,8 @@ li {
     display: flex;
     max-height: 2rem;
     text-align: left;
+    justify-content: space-between;
+    gap: 35%;
 }
 
 .whitepapers_margin {
