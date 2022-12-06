@@ -185,7 +185,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: green;
+    /* background: green; */
 }
 
 .designers_block {
