@@ -173,25 +173,27 @@ li {
 
 .designers_subtitle {
     position: absolute;
-    transform: translate(33%, 710%) rotate(-90deg);
+    transform: translate(33%, -1228%) rotate(-90deg);
     right: 28%;
+    top: 47.5%;
+}
+
+.designers_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
 }
 
 .designers_block {
     display: flex;
     align-items: baseline;
     width: 100%;
-    top: 50%;
-    transform: translate(0%, -50%);
-    position: absolute;
+    max-height: 100%;
 }
 
 .designers_block_card {
-    width: 23%; 
-}
-
-.card_bigsize {
-    width: 50%;
+    padding-right: 1.5em;
 }
 
 .card_img {
@@ -204,6 +206,10 @@ li {
     text-transform: uppercase;
 }
 
+.card_bigsize {
+    flex-grow: 0.63;
+}
+
 .text_card_bigsize {
     margin-left: 11em;
 }
@@ -211,6 +217,7 @@ li {
 #testimonials {
     display: flex;
     flex-wrap: wrap;
+    /* background-color: blue; */
 }
 
 #testimonials .subtitle {
