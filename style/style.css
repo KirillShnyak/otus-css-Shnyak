@@ -131,6 +131,8 @@ li {
     max-height: 100%;
     position: absolute; 
     right: 4.6%;
+    top: 50%;
+    transform: translateY(-53.7%) ;
 }
 
 .biography_text {
