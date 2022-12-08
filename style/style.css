@@ -112,7 +112,7 @@ li {
 
 .biography {
     position: absolute;
-    top: 38%;
+    top: 41%;
     right: 2.5%;
     transform: rotateZ(-90deg) translateX(-550%);
     z-index: 2;
@@ -132,7 +132,8 @@ li {
     position: absolute; 
     right: 4.6%;
     top: 50%;
-    transform: translateY(-53.7%) ;
+    transform: translateY(-50%);
+
 }
 
 .biography_text {
@@ -145,7 +146,7 @@ li {
 .biography_col_text {
     position: absolute;
     left: 46%;
-    top: 51%;
+    top: 54%;
     transform: translate(-50%, -50%);
     width: 60%;
 }
