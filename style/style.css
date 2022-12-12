@@ -176,7 +176,7 @@ li {
 
 .designers_subtitle {
     position: absolute;
-    transform: translate(33%, -1370%) rotate(-90deg);
+    transform: translate(33%, -1339%) rotate(-90deg);
     right: 28%;
     top: 47.5%;
 }
@@ -199,10 +199,13 @@ li {
 }
 
 .card_img {
-    padding-bottom: 1.2em;
     width: 309px;
     height: 442px;
     object-fit: cover;
+}
+
+.card_text {
+    margin-top: 1.2rem;
 }
 
 .card_bigsize {
