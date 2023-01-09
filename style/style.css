@@ -284,8 +284,13 @@ li {
 
 .testimonials_section .blockquote {
     text-align: center;
-    max-width: 225px;
     overflow-x: auto;
+}
+
+@media (min-height: 763px) {
+    .testimonials_section .blockquote {
+        max-width: 225px;
+    }
 }
 
 .blockquote_img {
