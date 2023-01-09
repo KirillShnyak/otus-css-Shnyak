@@ -238,16 +238,15 @@ li {
 
 .testimonials_section {
     display: grid;
-    grid-template: 4rem auto/12.3% 1fr 47%;
-    margin-top: 5.5em;
-    height: 100%;
+    grid-template: 17% 83%/12.3% 1fr 47%;
     /* background-color: blue; */
 }
 
 .testimonials_section .subtitle {
     width: 100%;
-    padding-top: 0.2em;
-    grid-column: 2/3;
+    padding-top: 2.2em;
+    align-self: center;
+    grid-column: 2/4;
 }
 
 .links_block {
@@ -255,14 +254,14 @@ li {
     flex-direction: column;
     justify-self: center;
     padding-left: 3.5em;
+    justify-content: space-evenly;
+    max-height: 757px;
     grid-column-start: 1;
 }
 
 .whitepapers {
     writing-mode: vertical-rl;
     transform: rotateZ(180deg);
-    justify-self: end;
-    margin-top: 4.5em;
 }
 
 .testimonials_section a {
@@ -280,6 +279,7 @@ li {
 
 .blockquote_block {
     justify-self: center;
+    text-align: center;
 }
 
 .testimonials_section .blockquote {
