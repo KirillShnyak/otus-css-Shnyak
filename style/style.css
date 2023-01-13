@@ -300,22 +300,24 @@ li {
 }
 
 .strong_points_block {
-    display: inline-block;
+    /* display: inline-block; */
     width: 100%;
     max-height: 100%;
     overflow-x: auto;
-    padding-top: 3.6%;
+    padding-top: 2.6%;
+    /* margin-top: 1.2%; */
     white-space: nowrap;
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
+    font-size: 0;
 }
 
 .strong_points_section h2 {
     position: absolute;
-    right: 63.2%;
-    top: 4.5%;
+    right: 65%;
+    top: 2.5%;
     transform: translate(35%, 182%) rotate(-90deg);
 }
 
@@ -326,14 +328,23 @@ li {
 }
 
 .strong_points_item {
-    margin: 0 1rem;
+    margin: 0 0.8rem;
     vertical-align: bottom;
+    font-size: 16px;
+}
+
+.first_item {
+    margin-left: 0;
+}
+
+.last_item {
+    margin-right: 0;
 }
 
 .strengths {
     display: inline-block;
     text-align: center;
-    margin: 0 9em 1.2em 2.4em;
+    margin: 0 9em 1.2em 3.2em;
 }
 
 .strengths h3 {
@@ -344,7 +355,7 @@ li {
     display: inline-block;
     text-align: left;
 } 
-
+/* 
 @supports (display: flex) {
     .strong_points_section {
         display: flex;
@@ -358,7 +369,7 @@ li {
     }
     .strong_points_section h2 {
         right: 65.6%;
-        top: 4%;
+        top: 2%;
         writing-mode: vertical-rl;
         transform: rotateZ(180deg);
     }
@@ -368,4 +379,4 @@ li {
     .strengths {
         margin: 0 8em 1.2em 2.4em;
     }
-}
+} */
