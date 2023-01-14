@@ -371,7 +371,6 @@ li {
     .strong_points_section h2 {
         right: 65.6%;
         top: 2%;
-        /* top: -4%; */
         writing-mode: vertical-rl;
         transform: rotateZ(180deg);
     }
