@@ -358,6 +358,10 @@ li {
     font-family: 'Butler', Georgia, 'Times New Roman', Times, serif;
 }
 
+.mobile-visible {
+    display: none;
+}
+
 footer .menu {
     display: none;   
 }
@@ -380,19 +384,25 @@ footer .menu {
     }
 }  
 
+@media (min-height: 763px) {
+    .testimonials_section .blockquote {
+        max-width: 211px;
+    }
+}
+
 @media (max-width: 600px) {
 
     .mobile-hidden {
         display: none;
     }
 
-    section {
-        min-height: 50.5rem;
+    main {
+        display: flex;
+        flex-direction: column;
     }
 
     .hero_block {
         overflow: hidden;
-        min-height: 55.5rem;
         margin-bottom: 2em;
     }
 
@@ -402,25 +412,23 @@ footer .menu {
         width: auto;
         max-height: 56.3rem;
         object-fit: fill;
-     }
+    }
      
-     .hero_text {
+    .hero_text {
         top: 0;
         transform: translateX(-50%);
         padding: 1.5em 2em 1.85em 2em;
-     }
+    }
 
-     .hero_text .title  {
+    .hero_text .title  {
         margin-bottom: 0.2em;
-     }
+    }
 
-     .biography_section {
-        max-height: 55.5rem;
-        min-height: 55.5rem;
+    .biography_section {
         overflow: hidden;
-     }
+    }
 
-     .biography {
+    .biography {
         top: 1.5%;
         right: 7.5%;
         transform: none;
@@ -473,9 +481,11 @@ footer .menu {
     }
     
     .biography_text hr {
-        width: 1.8rem;
-        margin: 3.2em 0 1em;
-        order: 2;
+        display: none;
+    }
+
+    .mobile-visible {
+        display: inline;
     }
     
     #biography .title {
@@ -500,12 +510,45 @@ footer .menu {
     }
     
     .designers_section {
-        padding-bottom: 35%;
+        padding-bottom: 14%;
     }
 
     .card_img {
         width: 262px;
     }
+
+    .card_bigsize {
+        display: none;
+    }
+
+    .card_text {
+        margin-left: 0.4em;
+    }
+
+    .designers_block_card:first-child {
+        margin-left: 2.4em;
+    }
+    
+    .designers_block_card:last-child {
+        margin-right: 2.4em;
+    }
+
+    /* .card_bigsize {
+        text-align: left;
+        width: auto;
+        margin: 0;
+    }
+
+    .card_bigsize .card_img {
+        width: 262px;
+        height: 442px;
+        object-fit: cover;
+    }
+    
+    .card_bigsize .card_text {
+        display: inline-block;
+        text-align: left;
+    } */
 
     .testimonials_section {
         display: flex;
@@ -585,37 +628,36 @@ footer .menu {
         order: 2;
     }
 
-    footer .menu {
+    .menu {
       display: flex;
       flex-direction: row;
       border-top: 1px solid #000;
-      margin-top: 2.2em
+      margin-top: 2.2em;
+      justify-content: space-around;
+      order: 1;
     }
 
-    footer .menu a{
-        width: 25%;
-        height: 95px;
+    nav a {
+        /* width: 25%; */
+        height: 85px;
         display: flex;
-        overflow: hidden;
+        /* overflow: hidden; */
+        /* justify-content: center; */
         align-items: center;
         text-decoration: none;
     }
 
-    footer .menu a:last-child {
+    nav a:last-child {
         text-decoration: underline;
     }
 
-    footer .menu a span {
-        overflow: hidden;
-        white-space: nowrap;
+    nav a {
+        font-size: 0;
     }
 
-    footer .menu a span::first-letter {
+    nav a span::first-letter {
         font-family: 'Butler', Georgia, 'Times New Roman', Times, serif; 
         font-size: 2.5rem; 
-        line-height: 3rem;
-        width: 100%;
         color: #000;
-        margin: 39%;
     }
 }
