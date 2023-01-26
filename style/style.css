@@ -78,18 +78,18 @@ li {
 }
 
 .hero_block img {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   width: 100%;
-   height: 100%;
-   max-width: 66.5rem;
-   max-height: 39.3rem;
-   object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 66.5rem;
+    max-height: 39.3rem;
+    object-fit: contain;
 }
 
-.hero_text{
+.hero_text {
     position: absolute;
     background-color: #ffffff;
     text-align: center;
@@ -101,13 +101,13 @@ li {
     white-space: nowrap;
 }
 
-.hero_text .title  {
+.hero_text .title {
     font-size: 0.9em;
 }
 
-.hero_text .subtitle  {
-  font-size: 0.21em;
-  margin-bottom: -1.2em;
+.hero_text .subtitle {
+    font-size: 0.21em;
+    margin-bottom: -1.2em;
 }
 
 .biography {
@@ -362,10 +362,6 @@ li {
     display: none;
 }
 
-footer .menu {
-    display: none;   
-}
-
 @supports (display: flex) {
     .strong_points_section {
         display: flex;
@@ -390,42 +386,58 @@ footer .menu {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
     .mobile-hidden {
         display: none;
     }
 
+    section {
+        height: calc(100vh - 5.3rem);
+    }
+
     main {
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 5.3rem;
     }
 
     .hero_block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero_img {
+        height: 55%;
         overflow: hidden;
-        margin-bottom: 2em;
     }
 
     .hero_block img {
-        position: absolute;
-        left: 48%;
+        position: relative;
+        left: 0;
+        max-height: none;
+        object-fit: cover;
+        height: 180%;
+        top: 0;
+        transform: translate(-27%, -45%);
         width: auto;
-        max-height: 56.3rem;
-        object-fit: fill;
     }
      
     .hero_text {
+        position: relative;
         top: 0;
-        transform: translateX(-50%);
-        padding: 1.5em 2em 1.85em 2em;
+        left: 0;
+        transform: none;
+        height: 45%;
+        padding: 1.48em 0.2em;
     }
 
-    .hero_text .title  {
+    .hero_text .title {
         margin-bottom: 0.2em;
+        white-space: normal;
     }
 
     .biography_section {
-        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .biography {
@@ -437,26 +449,28 @@ footer .menu {
     .biography_img {
         float: none;
         width: 100%;
-        text-align: left;
-        height: 100%;
+        text-align: center;
+        height: 40%;
         position: relative;
-        left: -15%;
-        bottom: -33%;
+        left: 0%;
+        bottom: 0%;
     }
     
     #biography img {
-        max-width: fit-content;
+        max-width: none;
         max-height: 100%;
         position: relative; 
         right: 0%;
         top: 0%;
         transform: none;
+        width: 100%;
+        object-fit: cover;
     }
     
     .biography_text {
         float: none;
         width: 100%;
-        height: auto;
+        height: 60%;
         position: absolute;
         top: 1%;
         background-color: #ffffff;
@@ -472,12 +486,13 @@ footer .menu {
         top: 0%;
         transform: none;
         width: 100%;
+        height: 100%;
+        align-content: space-between;
     }
     
     .jobtitle {
         padding-top: 0;
         width: 168px;
-        margin-bottom: 5.5rem;
     }
     
     .biography_text hr {
@@ -492,48 +507,31 @@ footer .menu {
         white-space: nowrap;
         width: 86%;
         order: 3;
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: -1rem;
     }
 
     .biography_col_text .blockquote {
         order: 1;
         width: 96%;
-        margin-bottom: 4rem;
     }
 
     .designers_subtitle {
         position: absolute;
         transform: none;
         right: 8%;
-        top: 8.5%;
-    }
-    
-    .designers_section {
-        padding-bottom: 14%;
+        top: 7.5%;
     }
 
     .card_img {
         width: 262px;
     }
 
-    .card_bigsize {
-        display: none;
-    }
-
     .card_text {
         margin-left: 0.4em;
     }
 
-    .designers_block_card:first-child {
-        margin-left: 2.4em;
-    }
-    
-    .designers_block_card:last-child {
-        margin-right: 2.4em;
-    }
-
-    /* .card_bigsize {
+    .card_bigsize {
         text-align: left;
         width: auto;
         margin: 0;
@@ -548,35 +546,44 @@ footer .menu {
     .card_bigsize .card_text {
         display: inline-block;
         text-align: left;
-    } */
+    }
 
     .testimonials_section {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     
     .testimonials_section .subtitle {
         text-align: right;
         padding: 0 3em;
-        margin-bottom: 7em;
     }
 
     .testimonials_img {
         display: none;
     }
 
+    .blockquote_block {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 66%;
+    }
+
     .blockquote_img {
         object-fit: cover;
         height: 333px;
         width: 85%;
-        margin: 0 0 3em;
+        margin: 0 ;
+        align-self: center;
     }
     
     .testimonials_section .blockquote {
         text-align: center;
         overflow-x: auto;
         max-width: none;
-        margin: 0 1.5em 2.55em;
+        margin: 0 1.5em 0;
     }
 
     .links_block {
@@ -587,7 +594,8 @@ footer .menu {
         flex-flow: wrap;
         justify-content: left;
         margin: 0 2em;
-        row-gap: 3em;
+        align-content: space-between;
+        height: 15%;
     }
     
     .whitepapers {
@@ -630,32 +638,33 @@ footer .menu {
 
     .menu {
       display: flex;
-      flex-direction: row;
       border-top: 1px solid #000;
-      margin-top: 2.2em;
       justify-content: space-around;
+      align-items: center;
       order: 1;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      z-index: 10;
     }
 
     nav a {
-        /* width: 25%; */
+        width: 20%;
+        text-align: center;
         height: 85px;
-        display: flex;
-        /* overflow: hidden; */
-        /* justify-content: center; */
+        font-size: 0;
         align-items: center;
         text-decoration: none;
+        padding: 1.5rem 0;
     }
 
-    nav a:last-child {
+    nav a:hover {
         text-decoration: underline;
     }
 
-    nav a {
-        font-size: 0;
-    }
-
-    nav a span::first-letter {
+    nav a::first-letter {
         font-family: 'Butler', Georgia, 'Times New Roman', Times, serif; 
         font-size: 2.5rem; 
         color: #000;
